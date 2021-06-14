@@ -1,0 +1,2 @@
+# NewsBoard
+CRUD on Django
