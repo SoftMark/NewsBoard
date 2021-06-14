@@ -1,0 +1,23 @@
+  <h5 class="h5 list-group-item list-group-item-action active">_Soft_Mark_News_
+    <a href="/newslist/create_post/"><button type="button" class="btn btn-outline-light">Create your own Article</button></a>
+  </h5>
+  <p></p>
+
+  {% block articles %}
+
+    {% if object_list %}
+      {% for article in object_list %}
+        <small class="form-text text-muted">{{ article.date }}</small>
+        <a href="{{ article.link }}" class="h2 list-group-item list-group-item-action">{{ article.title }}</a>
+        <a href="/"><button type="submit" class="btn btn-success">Likes:  {{ article.likes }}</button></a>
+        <a href="/"><button class="btn btn-primary" type="submit">Comment</button></a>
+        <a href="/"><button type="button" class="btn btn-danger">Unlikes: {{ article.unlikes }}</button></a>
+        <p></p>
+      {% endfor %}
+    {% else %}
+      <p class="h5 list-group-item list-group-item-action">Articles not found..</p>
+    {% endif %}
+
+  {% endblock %}
+
+

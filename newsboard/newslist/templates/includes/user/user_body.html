@@ -1,0 +1,17 @@
+{% block body %}
+<body>
+{% block main %}
+{% include "includes/user/user_main.html" %}
+{% endblock %}
+
+
+{% block upload_form %}
+{% include "includes/user/upload_form.html" %}
+{% endblock %}
+
+
+{% block Files %}
+{% include "includes/user/user_files.html" %}
+{% endblock %}
+</body>
+{% endblock %}

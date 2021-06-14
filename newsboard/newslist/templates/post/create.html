@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+{% include "includes/head.html" %}
+{% endblock %}
+
+<body>
+
+  <h5 class="h5 list-group-item list-group-item-action active">Create your Post
+      <a href="/newslist/"><button type="button" class="btn btn-outline-light">Back</button></a>
+  </h5>
+
+<form>
+
+  <div class="form-group">
+    <label for="inputTitle">Title</label>
+    <input class="form-control" id="inputTitle" placeholder="title">
+  </div><p></p>
+
+  <div class="form-group">
+    <label for="inputLink">Link</label>
+    <input class="form-control" id="inputLink" placeholder="link">
+  </div><p></p>
+
+  <div class="form-group">
+    <label for="inputUsername">Username</label>
+    <input class="form-control" id="inputUsername" placeholder="username">
+  </div><p></p>
+
+  <p></p>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+
+</html>
