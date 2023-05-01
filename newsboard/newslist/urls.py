@@ -1,5 +1,4 @@
-from django.conf.urls import url
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView
 from .models import Articles
 from django.urls import path
 from . import views
